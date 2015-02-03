@@ -43,7 +43,7 @@ bindsym $mod+d exec dmenu_run
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
-bindsym $mod+l focus up
+#bindsym $mod+l focus up
 bindsym $mod+odiaeresis focus right
 
 # alternatively, you can use the cursor keys:
@@ -90,6 +90,8 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
+# lock screen
+bindsym $mod+l exec "i3lock -i ~/.i3/screen.png -p win"
 
 set $ws1 1:www
 set $ws2 2:mail
@@ -203,3 +205,4 @@ exec xfce4-power-manager
 exec /usr/libexec/gnome-settings-daemon
 
 bindsym $mod+Shift+s exec /home/nicolas/scripts/s2ram
+exec dropbox start
